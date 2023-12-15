@@ -5,16 +5,41 @@ public class Teilnehmer {
     public int kursnummer;
     public String adresse;
 
+    public Teilnehmer(String name,
+                      String vorname,
+                      int geburtsjahr,
+                      int kursnummer,
+                      String adresse) {
+        this.name = name;
+        this.vorname = vorname;
+        this.geburtsjahr = geburtsjahr;
+        this.kursnummer = kursnummer;
+        this.adresse = adresse;
+    }
+
     // Diese Klasse braucht einen Standard Konstruktor !!
+    // So haben wir das früher gemacht...
+//    public Teilnehmer(String teilnehmerName,
+//                      String teilnehmerVorname,
+//                      int teilnehmerGeburtsjahr,
+//                      int teilnehmerKursnummer,
+//                      String teilnehmerAdresse) {
+//        name = teilnehmerName;
+//        vorname = teilnehmerVorname;
+//        geburtsjahr = teilnehmerGeburtsjahr;
+//        kursnummer = teilnehmerKursnummer;
+//        adresse = teilnehmerAdresse;
+//    }
+
+    // Überladung, zweiter Konstruktor mit anderen Parametern
     public Teilnehmer(String teilnehmerName,
                       String teilnehmerVorname,
                       int teilnehmerGeburtsjahr,
-                      int teilnehmerKursnummer,
                       String teilnehmerAdresse) {
         name = teilnehmerName;
         vorname = teilnehmerVorname;
         geburtsjahr = teilnehmerGeburtsjahr;
-        kursnummer = teilnehmerKursnummer;
+        kursnummer = 2531;
         adresse = teilnehmerAdresse;
     }
 
