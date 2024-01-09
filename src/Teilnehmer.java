@@ -32,15 +32,11 @@ public class Teilnehmer {
 //    }
 
     // Überladung, zweiter Konstruktor mit anderen Parametern
-    public Teilnehmer(String teilnehmerName,
-                      String teilnehmerVorname,
-                      int teilnehmerGeburtsjahr,
-                      String teilnehmerAdresse) {
-        name = teilnehmerName;
-        vorname = teilnehmerVorname;
-        geburtsjahr = teilnehmerGeburtsjahr;
-        kursnummer = 2531;
-        adresse = teilnehmerAdresse;
+    public Teilnehmer(String name,
+                      String vorname,
+                      int geburtsjahr,
+                      String adresse) {
+        this(name, vorname, geburtsjahr, 2531, adresse);
     }
 
     public void anmelden() {
