@@ -1,9 +1,9 @@
 public class Teilnehmer {
-    public String name;
-    public String vorname;
-    public int geburtsjahr;
-    public int kursnummer;
-    public String adresse;
+    private String name;
+    private String vorname;
+    private int geburtsjahr;
+    private int kursnummer;
+    private String adresse;
 
     public Teilnehmer(String name,
                       String vorname,
@@ -37,6 +37,46 @@ public class Teilnehmer {
                       int geburtsjahr,
                       String adresse) {
         this(name, vorname, geburtsjahr, 2531, adresse);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getVorname() {
+        return vorname;
+    }
+
+    public void setVorname(String vorname) {
+        this.vorname = vorname;
+    }
+
+    public int getGeburtsjahr() {
+        return geburtsjahr;
+    }
+
+    public void setGeburtsjahr(int geburtsjahr) {
+        this.geburtsjahr = geburtsjahr;
+    }
+
+    public int getKursnummer() {
+        return kursnummer;
+    }
+
+    public void setKursnummer(int kursnummer) {
+        this.kursnummer = kursnummer;
+    }
+
+    public String getAdresse() {
+        return adresse;
+    }
+
+    public void setAdresse(String adresse) {
+        this.adresse = adresse;
     }
 
     public void anmelden() {
